@@ -1,3 +1,4 @@
+import 'package:blinkit_clone/screens/splash/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,6 +10,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: "Blinkit",
+      home: SplashScreen(),
+    );
   }
 }
