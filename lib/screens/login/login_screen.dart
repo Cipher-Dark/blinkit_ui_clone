@@ -1,3 +1,5 @@
+import 'package:blinkit_clone/screens/bottomnav/bottom_nav_screen.dart';
+import 'package:blinkit_clone/screens/splash/splash_screen.dart';
 import 'package:blinkit_clone/widgets/ui_helper.dart';
 import 'package:flutter/material.dart';
 
@@ -42,7 +44,9 @@ class LoginScreen extends StatelessWidget {
                               borderRadius: BorderRadius.circular(10),
                             ),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => BottomNavScreen()));
+                          },
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             spacing: 5,
